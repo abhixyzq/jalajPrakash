@@ -1,5 +1,5 @@
 import React from 'react';
-import { QrCode, Mail, Phone, MoveRight } from 'lucide-react';
+import { QrCode, Mail, MoveRight } from 'lucide-react';
 import InstagramIcon from './icons/InstagramIcon';
 import FigmaIcon from './icons/FigmaIcon';
 export default function About({ profile }) {
@@ -53,9 +53,6 @@ export default function About({ profile }) {
                 <ul className="space-y-2 text-xs font-sans font-bold text-zinc-800">
                   <li className="flex items-center gap-2">
                     <Mail className="w-3.5 h-3.5" /> : {profile?.email}
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <Phone className="w-3.5 h-3.5" /> : +91 98765 43210
                   </li>
                   <li className="flex items-center gap-2">
                     <InstagramIcon className="w-3.5 h-3.5" /> : @advora_ad
