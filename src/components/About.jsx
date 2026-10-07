@@ -1,7 +1,7 @@
 import React from 'react';
 import { QrCode, Mail, Phone, MoveRight } from 'lucide-react';
 import InstagramIcon from './icons/InstagramIcon';
-
+import FigmaIcon from './icons/FigmaIcon';
 export default function About({ profile }) {
   const portraitSrc = profile?.portrait || '/images/portrait.jpg';
 
@@ -119,10 +119,14 @@ export default function About({ profile }) {
                 <div className="flex flex-wrap gap-3">
                   {['Ps', 'Ai', 'Id', 'Pr', 'Figma'].map((skill, i) => (
                     <div key={i} className="w-12 h-12 rounded-xl border-2 border-zinc-900 flex items-center justify-center font-black text-lg text-white shadow-[2px_2px_0_0_#1a1a1a]"
-                      style={{ backgroundColor: skill === 'Ps' ? '#001e36' : skill === 'Ai' ? '#330000' : skill === 'Id' ? '#49021f' : skill === 'Pr' ? '#00005c' : '#f24e1e' }}>
-                      <span className={skill === 'Ps' ? 'text-[#31a8ff]' : skill === 'Ai' ? 'text-[#ff9a00]' : skill === 'Id' ? 'text-[#ff3366]' : skill === 'Pr' ? 'text-[#9999ff]' : 'text-white'}>
-                        {skill}
-                      </span>
+                      style={{ backgroundColor: skill === 'Ps' ? '#001e36' : skill === 'Ai' ? '#330000' : skill === 'Id' ? '#49021f' : skill === 'Pr' ? '#00005c' : '#1e1e1e' }}>
+                      {skill === 'Figma' ? (
+                        <FigmaIcon className="w-6 h-6" />
+                      ) : (
+                        <span className={skill === 'Ps' ? 'text-[#31a8ff]' : skill === 'Ai' ? 'text-[#ff9a00]' : skill === 'Id' ? 'text-[#ff3366]' : skill === 'Pr' ? 'text-[#9999ff]' : 'text-white'}>
+                          {skill}
+                        </span>
+                      )}
                     </div>
                   ))}
                 </div>
