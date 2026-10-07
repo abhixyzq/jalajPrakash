@@ -88,9 +88,9 @@ export default function About({ profile }) {
               {/* Working Experience */}
               <div>
                 <h4 className="font-syne text-xl font-black text-zinc-900 mb-6 border-b-2 border-champagne inline-block pb-1">Working Experience</h4>
-                <div className="space-y-6 relative before:absolute before:inset-0 before:ml-2 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-zinc-300 before:to-transparent">
+                <div className="space-y-6 relative before:absolute before:inset-0 before:ml-2 before:-translate-x-px before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-zinc-300 before:to-transparent">
                   {/* Experience Item 1 */}
-                  <div className="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
+                  <div className="relative flex items-center group is-active">
                     <div className="flex items-center justify-center w-4 h-4 rounded-full border-2 border-zinc-900 bg-champagne shrink-0 absolute left-0 ml-0.5 -translate-x-1/2"></div>
                     <div className="ml-8 text-xs font-sans">
                       <div className="font-black text-zinc-900 text-sm">Graphic Design</div>
@@ -99,7 +99,7 @@ export default function About({ profile }) {
                     </div>
                   </div>
                   {/* Experience Item 2 */}
-                  <div className="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
+                  <div className="relative flex items-center group is-active">
                     <div className="flex items-center justify-center w-4 h-4 rounded-full border-2 border-zinc-900 bg-white shrink-0 absolute left-0 ml-0.5 -translate-x-1/2"></div>
                     <div className="ml-8 text-xs font-sans">
                       <div className="font-black text-zinc-900 text-sm">Art Director</div>
