@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='25' fill='%23e5c07b'/><text x='50%' y='55%' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-weight='900' font-size='50' fill='%23070709'>JP</text></svg>" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Jalaj Prakash — Graphic Designer, Advertising Creative & Visual Storyteller. Portfolio for Advora Creative Studio showcasing luxury advertising, commercial campaigns, and brand visuals." />
+    <meta name="keywords" content="Jalaj Prakash, Advora, Graphic Designer, Advertising Creative, Visual Storytelling, Luxury Fragrance Ad, Jewellery Campaign, Social Media Ads" />
+    <meta property="og:title" content="Jalaj Prakash | Advora Creative Studio" />
+    <meta property="og:description" content="Graphic Designer • Advertising Creative • Visual Storyteller" />
+    <meta property="og:type" content="website" />
+    <title>Jalaj Prakash | Advora Creative Studio</title>
+
+    <!-- Google Fonts: Syne (Bold Display) & Plus Jakarta Sans (Clean Modern Body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Syne:wght@600;700;800&display=swap" rel="stylesheet" />
+
+    <script>
+      // Automatically sanitize any oversized legacy base64 state from index (1).html
+      try {
+        const p = localStorage.getItem('advora_projects_v3');
+        if (p && (p.includes('data:image') || p === 'null' || p === 'undefined' || p === '{}')) {
+          localStorage.removeItem('advora_projects_v3');
+        }
+        const prof = localStorage.getItem('advora_profile_v3');
+        if (prof && (prof === 'null' || prof === 'undefined' || prof === '{}')) {
+          localStorage.removeItem('advora_profile_v3');
+        }
+      } catch (err) {
+        console.warn('Storage init check:', err);
+      }
+    </script>
+  </head>
+  <body class="bg-obsidian text-zinc-100 font-sans antialiased min-h-screen bg-grid-mesh relative overflow-x-hidden selection:bg-[#e5c07b] selection:text-black">
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

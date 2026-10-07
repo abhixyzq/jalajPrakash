@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@600;700&family=Montserrat:wght@400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-syne: 'Fredoka', sans-serif;
+  --font-sans: 'Montserrat', sans-serif;
+
+  /* Re-mapping to light theme colors */
+  --color-obsidian: #e8e8e8;
+  --color-surface: #dfdfdf;
+  --color-surface-card: #f4f4f4;
+  --color-surface-elevated: #ffffff;
+  --color-surface-border: #d1d1d1;
+
+  /* Primary Yellow */
+  --color-champagne: #ffad05;
+  --color-champagne-glow: #ffc13b;
+  --color-champagne-subtle: #ffd670;
+  --color-champagne-dark: #cc8902;
+
+  --animate-marquee: marquee 28s linear infinite;
+}
+
+body {
+  background-color: var(--color-obsidian);
+  color: #1a1a1a;
+  font-family: var(--font-sans);
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-obsidian);
+}
+::-webkit-scrollbar-thumb {
+  background: #bbbbbb;
+  border-radius: 999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-champagne);
+}
+
+.glass-dock {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.glass-panel {
+  background: rgba(244, 244, 244, 0.75);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.glass-panel:hover {
+  border-color: rgba(255, 173, 5, 0.4);
+}
+
+::selection {
+  background-color: var(--color-champagne);
+  color: #000;
+}
+
+/* Typography styles for the new theme */
+.text-outline {
+  -webkit-text-stroke: 1px #ffad05;
+  color: transparent;
+}
+.text-outline-gray {
+  -webkit-text-stroke: 1px #cccccc;
+  color: transparent;
+}
